@@ -3,6 +3,24 @@
 # Directory containing markdown files
 BLOG_DIR="blog"
 
+# Remove any existing HTML files that correspond to current drafts
+for draft in "$BLOG_DIR"/DRAFT-*.md; do
+    if [ -f "$draft" ]; then
+        # Extract the base name without DRAFT- prefix and .md extension
+        base_name=$(basename "$draft" | sed 's/^DRAFT-//; s/\.md$//')
+        html_file="$BLOG_DIR/$base_name.html"
+        
+        # Don't delete index.html
+        if [ "$html_file" != "$BLOG_DIR/index.html" ] && [ -f "$html_file" ]; then
+            echo "Removing $html_file"  # Debug output
+            rm "$html_file"
+        fi
+    fi
+done
+
+# Clean any existing temporary files before starting
+rm -f post_list.tmp sorted_post_list.tmp
+
 # Generate HTML for each markdown file
 for file in "$BLOG_DIR"/*.md; do
     # Skip files that start with DRAFT-
