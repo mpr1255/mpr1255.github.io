@@ -50,7 +50,7 @@ for file in "$BLOG_DIR"/*.md; do
 done
 
 # Sort post list by date (newest first)
-sort -r "post_list.tmp" > "sorted_post_list.tmp"
+sort "post_list.tmp" > "sorted_post_list.tmp"
 
 # Generate new index.html
 cat > "index.html" << EOF
