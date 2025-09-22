@@ -62,7 +62,35 @@ cat > "index.html" << EOF
 </head>
 <body>
     <div class="container">
-        $(cat intro.html)
+        <center><h1 align="CENTER">Matthew P. Robertson</h1></center>
+        <p>
+        <table>
+        <tr>
+        <td>
+        <img src="photo.png" align="left" width = 200>
+        </td>
+        <td>
+        <p>
+        <b>Github: </b> <a href ="https://github.com/mpr1255/">github.com/mpr1255/</a>
+        <p>
+        <p>
+        <b>Twitter: </b> <a href ="https://twitter.com/mpr0010">twitter.com/mpr0010</a>
+        <p>
+        <b>Email address: </b>  matthew.peter.robertson@uni-mannheim.de
+        <p>
+        <b>Work address: </b> University of Mannheim, Social Data Science, A 5,6 | 68159 Mannheim
+        <p>
+        </td>
+        </tr>
+        </table>
+        <h2> Work: </h2>
+        I am a postdoctoral fellow in Social Data Science at the University of Mannheim. I work on the application of large language models to social science methodology and substantive problems. My PhD, from the Australian National University, explores how states exploit the bodily resources of their subjects, taking as a case <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ajt.16969">organ trafficking</a> in the People's Republic of China. Other work I'm involved in looks at political violence, the death penalty, rule of law in China, PRC policies in Xinjiang, and metascience. These various interests have led me to become something of a digital archivist, and I now maintain a number of large collections of PRC primary source materials, including court decisions, Party documents, and media and academic works. I also maintain a large full text database of <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.240313">social science papers</a>. I primarily use computational and quantitative methods but I am also very interested in theory.
+        <p>
+        I've previously worked as a legal researcher, human rights researcher, and interpreter, translator, and primary researcher doing due diligence for financial companies. My BA (ANU) was in continental philosophy and English literature.
+        <p>
+        A list of my publications is <a href="pubs.html">here</a>.
+        <p>
+        This website <strike>is</strike> was based on <a href= "https://web.archive.org/web/19990508071628/http://reality.sgi.com/boehm/">Hans-J. Boehm's</a>. I find the style appropriate and it brings back my earliest memories of the internet.
         <hr>
         <h2>Blog:</h2>
         <ul>

@@ -16,7 +16,6 @@ A minimalist static website and blog generator using Pandoc and Bash.
 │   ├── *.md          # Markdown blog posts
 │   └── *.html        # Generated HTML blog posts
 ├── style.css         # Main stylesheet
-├── intro.html        # Main content for homepage
 ├── blog_template.html # Template for blog posts
 ├── generate_blog.sh  # Main build script
 └── index.html        # Generated homepage
@@ -55,9 +54,8 @@ Content goes here...
 
 ## Templates
 
-The site uses two main templates:
+The site uses one main template:
 - `blog_template.html`: Template for individual blog posts
-- `intro.html`: Content for the homepage
 
 ## Styling
 
