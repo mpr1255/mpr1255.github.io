@@ -43,7 +43,7 @@ for file in "$BLOG_DIR"/*.md; do
             -s --metadata title="$title" \
             -c "../style.css" \
             --template="$(pwd)/blog_template.html" \
-            --highlight-style=tango
+            --syntax-highlighting=tango
         
         echo "<li><a href='blog/$name.html'>$title</a> - $date</li>" >> "post_list.tmp"
     fi
